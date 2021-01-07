@@ -1,0 +1,35 @@
+
+body {
+    font-family: 'Kufam', cursive;
+    font-style: italic;
+}
+h1 {
+    font-family: 'Goldman', cursive;
+}
+.nav-link {
+    color: cadetblue;
+    text-decoration: none;
+    background-color: transparent;
+}
+section {
+    float: left;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+#inicio {
+    height: auto;
+    background-color: burlywood;
+}
+#quienSoy {
+    background-color: brown;
+}
+#servicios {
+    background-color: chocolate;
+}
+#portfolio {
+    background-color: cornflowerblue;
+}
+#contacto {
+    background-color: darkslategrey;
+}

@@ -1,9 +1,18 @@
 body {
   font-family: 'Kufam', cursive;
-  font-style: italic; }
+  /*    font-style: italic;*/ }
 
 h1 {
   font-family: 'Goldman', cursive; }
+
+div {
+  padding-top: 2%;
+  padding-bottom: 2%; }
+
+.centerInXY {
+  display: grid;
+  align-content: space-evenly;
+  justify-content: center; }
 
 .nav-link {
   color: cadetblue;
@@ -11,14 +20,13 @@ h1 {
   background-color: transparent; }
 
 section {
-  float: left;
   position: relative;
   height: 100vh;
   width: 100%; }
 
 #inicio {
   height: auto;
-  background-color: burlywood; }
+  background-color: darkslategrey; }
 
 #quienSoy {
   background-color: brown; }

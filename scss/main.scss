@@ -1,6 +1,9 @@
 
 .text--size30 {font-size: 30px;}
 .text--alignCenter {text-align: center;}
+html {
+    scroll-behavior: smooth;
+  }
 body {
     font-family: 'Kufam', cursive;
     font-size: 20px;
@@ -9,7 +12,9 @@ body {
 h1 {
     font-family: 'Goldman', cursive;
 }
-
+.div--padding {
+    padding: 5%;
+}
 .centerInXY {
     display: grid;
     align-content: center;
@@ -21,13 +26,12 @@ h1 {
     justify-content: center;
 }
 .nav-link {
-    color: cadetblue;
+    color: #818181;
     text-decoration: none;
     background-color: transparent;
 }
 a:hover {
     color: #d97d0c;
-    transform: scale(1.2);
     transition: all 0.5s;
 }
 section {
@@ -40,22 +44,10 @@ section {
 }
 #inicio {
     height: auto;
-    background-color: darkslategrey;
-}
-#quienSoy {
-    background-image: linear-gradient(darkslategrey,dimgrey,dimgrey);
-}
-#portfolio {
-    background-image: linear-gradient(dimgray,gray,gray,darkslategrey);
-}
-#servicios {
-    background-image: linear-gradient(darkslategrey,dimgrey,dimgrey);
-}
-#trabajos {
-    background-image: linear-gradient(dimgray,gray,gray,darkslategrey);
+    background-color: rgba(0,0,0,0.7);
 }
 #contacto {
-    background-color: darkslategrey;
+    background-color: rgba(0,0,0,0.7);
 }
 .icon-item {
     width: 50px;
@@ -65,19 +57,15 @@ section {
 //-------------------------------------------------------------------Side Menu--------------------
 
 
-body {
-    background-color: black;
-}
-
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 11; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: rgba(0,0,0,0.9);
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -95,7 +83,7 @@ body {
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: #d97d0c;
   }
   
   /* Position and style the close button (top right corner) */
@@ -107,10 +95,6 @@ body {
     margin-left: 50px;
   }
   
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-  }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
@@ -121,24 +105,19 @@ body {
 /* ---------------------------------------------------------------------------Stiky Boton */
 
 .btn--sideMenu {
-    color: cadetblue;
+    color: #818181;
     text-decoration: none;
     background-color: transparent;
-    z-index: 100;
+    z-index: 10;
     .icon {
         width: 25px;
         height: 25px;
     }
 }
-.btn--sideMenu:hover{
-    transform: scale(2);
-    transition: 0.5s;
-}
-
 #navbar-btn {
-    z-index: 100;
+    z-index: 10;
     overflow: hidden;
-    background-color: transparent;
+    width: 100%;
 }
 
 
@@ -148,3 +127,43 @@ body {
     position: sticky;
     top: 0;  
 }
+//---------------------------------------------------------------------------------------------BUTTON
+
+.button {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.7);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

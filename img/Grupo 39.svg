@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="219.337" height="256" viewBox="0 0 219.337 256">
+  <g id="Grupo_39" data-name="Grupo 39" transform="translate(-1368.744 -596)">
+    <path id="Shape" d="M0,0H64.64L32.32,32.32Z" transform="translate(1556.4 852) rotate(180)" fill="#f32f09"/>
+    <path id="Shape-2" data-name="Shape" d="M128,0V128H0Z" transform="translate(1588.08 852) rotate(180)" fill="#212026"/>
+    <path id="Shape-3" data-name="Shape" d="M0,0,128,128H0Z" transform="translate(1588.08 852) rotate(180)" fill="#594346"/>
+    <path id="Shape-4" data-name="Shape" d="M128,0V128H0A128,128,0,0,1,128,0Z" transform="translate(1460.08 596)" fill="#212026"/>
+    <path id="Shape-5" data-name="Shape" d="M176.276,103.784v72.649H103.448A72.739,72.739,0,0,1,176.276,103.784Z" transform="translate(1411.805 547.568)" fill="#f1e3cf"/>
+    <path id="Shape-6" data-name="Shape" d="M210.759,177.494v33.337H177.34A33.378,33.378,0,0,1,210.759,177.494Z" transform="translate(1377.322 513.169)" fill="#212026"/>
+    <g id="Shape-7" data-name="Shape" transform="translate(1460.08 852) rotate(180)">
+      <rect id="Rectángulo_22" data-name="Rectángulo 22" width="39.879" height="39.879" transform="translate(51.457 50.171)" fill="#212026"/>
+      <rect id="Rectángulo_23" data-name="Rectángulo 23" width="39.879" height="39.879" transform="translate(51.457 0)" fill="#212026"/>
+      <rect id="Rectángulo_24" data-name="Rectángulo 24" width="39.879" height="39.879" transform="translate(0 50.171)" fill="#212026"/>
+      <rect id="Rectángulo_25" data-name="Rectángulo 25" width="39.879" height="39.879" transform="translate(0 0)" fill="#212026"/>
+      <rect id="Rectángulo_26" data-name="Rectángulo 26" width="18.653" height="18.653" transform="translate(62.392 61.106)" fill="#594346"/>
+      <rect id="Rectángulo_27" data-name="Rectángulo 27" width="18.653" height="18.653" transform="translate(62.392 10.935)" fill="#594346"/>
+      <rect id="Rectángulo_28" data-name="Rectángulo 28" width="18.653" height="18.653" transform="translate(10.935 61.106)" fill="#594346"/>
+      <rect id="Rectángulo_29" data-name="Rectángulo 29" width="18.653" height="18.653" transform="translate(10.935 10.935)" fill="#594346"/>
+    </g>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
-.text--size30 {
+.text-size30 {
   font-size: 30px; }
 
-.text--alignCenter {
+.text-alignCenter {
   text-align: center; }
 
 html {
@@ -9,8 +9,10 @@ html {
 
 body {
   font-family: 'Kufam', cursive;
-  font-size: 20px;
-  /*    font-style: italic;*/ }
+  font-size: 20px; }
+
+.side-section {
+  padding-left: 25%; }
 
 h1 {
   font-family: 'Goldman', cursive; }
@@ -28,15 +30,6 @@ h1 {
   flex-direction: row;
   justify-content: center; }
 
-.nav-link {
-  color: #818181;
-  text-decoration: none;
-  background-color: transparent; }
-
-a:hover {
-  color: #d97d0c;
-  transition: all 0.5s; }
-
 section {
   position: relative;
   width: 100%;
@@ -45,11 +38,7 @@ section {
 .full-vh {
   height: 100vh; }
 
-#inicio {
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.7); }
-
-#contacto {
+.back-70 {
   background-color: rgba(0, 0, 0, 0.7); }
 
 .icon-item {
@@ -57,8 +46,36 @@ section {
   height: 50px;
   margin: 25px; }
 
+.sidenav-lg {
+  position: fixed;
+  z-index: 10;
+  display: grid;
+  justify-content: center;
+  height: 100vh; }
+  .sidenav-lg div img {
+    width: 150px; }
+
+.navbar ul {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: space-around;
+  list-style: none; }
+
+.nav-link {
+  display: block;
+  padding: 1.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  background-color: transparent; }
+
+a:hover {
+  color: #d97d0c;
+  transition: all 0.5s; }
+
 /* The side navigation menu */
 .sidenav {
+  display: none;
   height: 100%;
   /* 100% Full-height */
   width: 0;
@@ -106,36 +123,19 @@ section {
     font-size: 18px; } }
 
 /* ---------------------------------------------------------------------------Stiky Boton */
-.btn--sideMenu {
-  color: #818181;
-  text-decoration: none;
-  background-color: transparent;
-  z-index: 10; }
-  .btn--sideMenu .icon {
-    width: 25px;
-    height: 25px; }
-
 #navbar-btn {
-  z-index: 10;
-  overflow: hidden;
-  width: 100%; }
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: -webkit-sticky;
-  /* Safari */
-  position: sticky;
-  top: 0; }
+  display: none; }
 
 .button {
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: transparent;
   border: none;
-  color: #FFFFFF;
+  color: black;
   text-align: center;
   font-size: 28px;
   padding: 10px;
-  width: 200px;
+  width: 100px;
+  height: 100px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px; }
@@ -160,3 +160,22 @@ section {
 .button:hover span:after {
   opacity: 1;
   right: 0; }
+
+@media (max-width: 991px) {
+  .sidenav {
+    display: inline-block; }
+  .sidenav-lg {
+    display: none; }
+  #navbar-btn {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 10;
+    overflow: hidden; }
+    #navbar-btn img {
+      height: 100px; }
+  .side-section {
+    padding-left: 0%; } }

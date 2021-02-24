@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <g id="Grupo_16" data-name="Grupo 16" transform="translate(240) rotate(90)">
+    <circle id="Shape" cx="100.835" cy="100.835" r="100.835" transform="translate(19.2 18.6)" fill="#f1e3cf"/>
+    <path id="Shape-2" data-name="Shape" d="M116.5,240A116.5,116.5,0,0,1,0,123.5V120H3.5A116.5,116.5,0,0,1,120,236.505V240Z" fill="#571d19"/>
+    <path id="Shape-3" data-name="Shape" d="M236.505,120H240v3.5A116.5,116.5,0,0,1,123.5,240H120v-3.495A116.5,116.5,0,0,1,236.505,120Z" fill="#594346"/>
+    <path id="Shape-4" data-name="Shape" d="M123.5,120H120v-3.5A116.5,116.5,0,0,1,236.505,0H240V3.5A116.5,116.5,0,0,1,123.5,120Z" fill="#571d19"/>
+    <path id="Shape-5" data-name="Shape" d="M3.5,0A116.5,116.5,0,0,1,120,116.5V120h-3.5A116.5,116.5,0,0,1,0,3.5V0Z" fill="#594346"/>
+  </g>
+</svg>

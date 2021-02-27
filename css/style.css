@@ -8,11 +8,26 @@ html {
   scroll-behavior: smooth; }
 
 body {
+  background-image: linear-gradient(#f1e3cf, #571d19, #212027, #9b1e05, #212027, black, #571d19, #9b1e05, #f1e3cf);
   font-family: 'Kufam', cursive;
   font-size: 20px; }
 
+#main {
+  background-color: white;
+  margin-left: 6%; }
+
+.cover {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  background-image: url(img-back/10.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: auto;
+  height: 100vh; }
+
 .side-section {
-  padding-left: 25%; }
+  padding-left: 19%; }
 
 h1 {
   font-family: 'Goldman', cursive; }
@@ -23,7 +38,8 @@ h1 {
 .centerInXY {
   display: grid;
   align-content: center;
-  justify-content: center; }
+  justify-content: center;
+  justify-items: center; }
 
 .centerInX {
   display: flex;
@@ -38,20 +54,55 @@ section {
 .full-vh {
   height: 100vh; }
 
-.back-70 {
-  background-color: rgba(0, 0, 0, 0.7); }
+.back-90 {
+  background-color: rgba(0, 0, 0, 0.9); }
 
 .icon-item {
   width: 50px;
   height: 50px;
   margin: 25px; }
 
+.servicios-inicio .servicios-item {
+  align-content: baseline;
+  text-align: center; }
+
+.servicios-inicio .abajo {
+  height: 65px; }
+
+.servicios-inicio img {
+  height: 100px; }
+
+.servicios-inicio a {
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+  color: #d97d0c;
+  padding: 10%; }
+
+.servicios-inicio a:hover {
+  color: #571d19;
+  transform: scale(1.1);
+  transition: all 0.5s; }
+
+#premium img {
+  height: 110px; }
+
+#premium .img-premium-der {
+  display: flex;
+  justify-content: flex-end; }
+
+#premium .img-premium-izq {
+  display: flex;
+  justify-content: flex-start; }
+
 .sidenav-lg {
   position: fixed;
   z-index: 10;
   display: grid;
   justify-content: center;
-  height: 100vh; }
+  height: 100vh;
+  background-color: black;
+  margin-left: 5%; }
   .sidenav-lg div img {
     width: 150px; }
 
@@ -94,19 +145,6 @@ a:hover {
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */ }
 
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s; }
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #d97d0c; }
-
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
   position: absolute;
@@ -114,6 +152,9 @@ a:hover {
   right: 25px;
   font-size: 36px;
   margin-left: 50px; }
+  .sidenav .closebtn img {
+    height: 50px;
+    margin: 5px; }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -130,44 +171,21 @@ a:hover {
   border-radius: 4px;
   background-color: transparent;
   border: none;
-  color: black;
   text-align: center;
-  font-size: 28px;
-  padding: 10px;
-  width: 100px;
-  height: 100px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px; }
 
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s; }
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s; }
-
-.button:hover span {
-  padding-right: 25px; }
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0; }
-
 @media (max-width: 991px) {
   .sidenav {
-    display: inline-block; }
+    display: grid;
+    justify-content: center;
+    align-content: center; }
   .sidenav-lg {
     display: none; }
   #navbar-btn {
-    position: sticky;
+    position: fixed;
+    margin-left: -4%;
     top: 0;
     display: flex;
     flex-flow: row nowrap;
@@ -176,6 +194,19 @@ a:hover {
     z-index: 10;
     overflow: hidden; }
     #navbar-btn img {
-      height: 100px; }
+      height: 50px;
+      margin: 5px; }
   .side-section {
-    padding-left: 0%; } }
+    padding-left: 0%; }
+  #main {
+    margin-left: 4%; } }
+
+@media (max-width: 767px) {
+  .servicios-inicio a {
+    padding: 0%; }
+  #premium .img-premium-der {
+    display: flex;
+    justify-content: center; }
+  #premium .img-premium-izq {
+    display: flex;
+    justify-content: center; } }

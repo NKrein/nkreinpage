@@ -95,6 +95,73 @@ section {
   display: flex;
   justify-content: flex-start; }
 
+#trabajos img {
+  height: 110px; }
+
+.item-portfolio {
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  margin: 5%;
+  background-color: #212027;
+  color: #f1e3cf;
+  border-radius: 30px; }
+
+.item-portfolio:hover {
+  transform: scale(0.9);
+  transition: all 0.5s; }
+
+.side-contacto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
+  .side-contacto .side-icon {
+    width: 50px; }
+  .side-contacto a:hover {
+    color: #d97d0c;
+    transform: scale(1.2);
+    transition: all 0.5s; }
+
+#contacto a {
+  color: #9b1e05;
+  text-decoration: none; }
+
+#contacto a:hover {
+  color: #d97d0c;
+  transform: scale(1.2);
+  transition: all 0.5s; }
+
+#contacto a img {
+  height: 100px; }
+
+#contacto .contacto-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
+  #contacto .contacto-grid h3 .flechas-contacto-md {
+    display: inline;
+    height: 55px; }
+  #contacto .contacto-grid .flechas-contacto-sm {
+    display: none; }
+
+.grid-skills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
+  justify-items: center; }
+  .grid-skills img {
+    height: 100px; }
+
+.contacto-grid-perfil {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: start; }
+
 .sidenav-lg {
   position: fixed;
   z-index: 10;
@@ -219,4 +286,14 @@ a:hover {
   .servicios-inicio .abajo {
     height: 30px; }
   .servicios-inicio img {
-    height: 55px; } }
+    height: 55px; }
+  #contacto .contacto-grid {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center; }
+    #contacto .contacto-grid h3 .flechas-contacto-md {
+      display: none; }
+    #contacto .contacto-grid .flechas-contacto-sm {
+      display: inline;
+      height: 35px; } }

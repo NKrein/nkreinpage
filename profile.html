@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <meta name="description" content="Conocé quién está detrás de .NK, un desarrollador Front End dedicado a pontenciar y catapultar emprendedores y empresas al mundo digital.">
+    <meta name="keywords"  content="DISEÑO WEB, DESARROLLO WEB, WEB, NICOLAS KREIN, NICOLÁS KREIN, NKREIN, NK, PAGINA WEB, WEB SITE, SITE, FRONT END, DESARROLLO FRONT END, DESARROLLADOR, DEVELOPER, DEVELOPMENT">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/logo.png" type="image/png">
-    <title>NKrein</title>
+    <title>NKrein Perfil</title>
   </head>
   
   <div id="mySidenav" class="sidenav">
@@ -36,11 +39,11 @@
 
   <header class="col-lg-2 sidenav-lg">
 
-    <div class="centerInXY">
+    <div class="centerInXY fadeInDown">
       <img src="css/logo.png" alt="logo">
     </div>
 
-    <nav class="navbar text-alignCenter">
+    <nav class="navbar text-alignCenter pulse">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="index.html">HOME</a>
@@ -66,7 +69,7 @@
     </div>  
 
 
-    <div id="inicio" class="container-fluid">
+    <div id="inicio" class="container-fluid wow fadeInDown">
       <div class="row">
         
 
@@ -78,16 +81,16 @@
     </div>
 
 
-    <section id="quienSoy" class="side-section container-fluid">
+    <section id="quienSoy" class="side-section container-fluid wow fadeInUp">
       <div class="row">
-        <div class="col-12 col-sm-4 centerInXY">
+        <div class="col-12 col-sm-4 centerInXY wow fadeInDown">
           <h3>Perfil.</h3>
           <p>Soy estudiante en continua capacitación.</p>
-          <div class="centerInX">
+          <div class="centerInX wow fadeInDown">
             <img src="img/objetivo.png" alt="icono objetivo" class="icon-item">
           </div>
           <p>Me considero detallista y dedicado.</p>
-          <div class="centerInX">
+          <div class="centerInX wow fadeInDown">
             <img src="img/diamante.png" alt="icono diamante" class="icon-item">
           </div>
   
@@ -95,17 +98,17 @@
   
         <div class="col-12 col-sm-4 centerInXY">
           <div class="row">
-            <div class="col-6 col-sm-12 centerInXY">
+            <div class="col-6 col-sm-12 centerInXY wow fadeInDown">
               <img class="img-fluid" src="img/profile.png" alt="Imagen de perfil">
             </div>
-            <div class="col-6 col col-sm-12 centerInXY">
+            <div class="col-6 col col-sm-12 centerInXY wow fadeInDown">
               <h2 class="">Nicolás Krein Werle</h2>
               <p class="">Desarrollador Front End.</p>
             </div>
           </div>
         </div>      
   
-        <div class="col-12 col-sm-4 centerInXY">
+        <div class="col-12 col-sm-4 centerInXY wow fadeInDown">
           <div class="centerInX">
             <img src="img/reloj-de-ajedrez.png" alt="icono reloj" class="icon-item">
           </div>
@@ -115,11 +118,11 @@
           </div>
         </div>
   
-        <div class="col-12 col-sm-12 text-alignCenter">
+        <div class="col-12 col-sm-12 text-alignCenter wow fadeInDown">
           <p>Sostengo que un buen proyecto se lleva a cabo en un buen ambiente.</p>
         </div>
 
-        <div class="col-12 div--padding">
+        <div class="col-12 div--padding wow fadeInUp">
           <h3>Habilidades y conocimiento de herramientas</h3>
           <div class="grid-skills">
             
@@ -139,7 +142,7 @@
     <section id="portfolio" class="side-section container-fluid">
       <div class="row">
         <h3 class="col-12">Portfolio</h3>
-        <div class="col-sm-12 col-md-4 text-alignCenter">
+        <div class="col-sm-12 col-md-4 text-alignCenter wow fadeInRight">
           <a href="https://nkrein.github.io/dharma_disenos" target="_blank">
             <div class="row item-portfolio">
               <h3 class="col-12 col-sm-7 col-md-12">Dharma Diseños</h3>
@@ -149,7 +152,7 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-12 col-md-4 text-alignCenter">
+        <div class="col-sm-12 col-md-4 text-alignCenter wow fadeInUp">
           <a href="https://nkrein.github.io/madereraLC" target="_blank">
             <div class="row item-portfolio">
               <h3 class="col-12 col-sm-7 order-sm-2 col-md-12">Maderera LC</h3>
@@ -159,7 +162,7 @@
             </div>
           </a>
         </div>
-        <div class="col-sm-12 col-md-4 text-alignCenter">
+        <div class="col-sm-12 col-md-4 text-alignCenter wow fadeInLeft">
           <a href="https://nkrein.github.io/estudio_juridico" target="_blank">
             <div class="row item-portfolio">
               <h3 class="col-12 col-sm-7 col-md-12">Estudio Jurídico</h3>
@@ -196,6 +199,12 @@
     <!-- Script Propio -->
     <script src="script.js"></script>
 
+    <!-- Script WOW -->
+    <script src="wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
